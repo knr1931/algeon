@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # Meson Build
 .cache
+*.sln
+*.vcxproj
+*.filters
