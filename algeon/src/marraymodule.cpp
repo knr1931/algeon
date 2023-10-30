@@ -5,6 +5,7 @@
  * Copyright (c) 2023, K Nitesh Reddy
  */
 
+#define PY_SSIZE_T_CLEAN
 #include <Python.h>
 
 static PyObject *
