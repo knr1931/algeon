@@ -6,7 +6,7 @@ requires = [
 ]
 
 [project]
-name = 'algeon'
+name = 'nwengine'
 version = '0.0.1'
 description = 'Linear Algebra Library!'
 readme = 'README.md'

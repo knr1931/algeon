@@ -11,7 +11,7 @@
 static PyObject *
 foo(PyObject *self)
 {
-    return PyUnicode_FromString("Hello World! from Algeon Array Module");
+    return PyUnicode_FromString("Hello World! from nwengine Array Module");
 }
 
 static PyMethodDef methods[] = {

@@ -1,7 +1,7 @@
 /*
- * File: algeon.cpp
+ * File: nwengine.cpp
  * Author: K Nitesh Reddy
- * Description: This is main entry point for algeon library
+ * Description: This is main entry point for nwengine library
  * Copyright (c) 2023, K Nitesh Reddy
  */
 
