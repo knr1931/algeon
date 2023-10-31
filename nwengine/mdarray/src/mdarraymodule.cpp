@@ -11,7 +11,7 @@
 static PyObject *
 foo(PyObject *self)
 {
-    return PyUnicode_FromString("Hello World! from NWENGINE Array Module");
+    return PyUnicode_FromString("Hello World! from NWENGINE Multi Dim Array Module");
 }
 
 static PyMethodDef methods[] = {
@@ -21,13 +21,13 @@ static PyMethodDef methods[] = {
 
 static struct PyModuleDef module = {
     PyModuleDef_HEAD_INIT,
-    "marraymodule",
+    "mdarray",
     NULL,
     -1,
     methods,
 };
 
-PyMODINIT_FUNC PyInit_marraymodule(void)
+PyMODINIT_FUNC PyInit_mdarray(void)
 {
     return PyModule_Create(&module);
 }
