@@ -21,13 +21,13 @@ static PyMethodDef methods[] = {
 
 static struct PyModuleDef module = {
     PyModuleDef_HEAD_INIT,
-    "mdarray",
+    "matrix",
     NULL,
     -1,
     methods,
 };
 
-PyMODINIT_FUNC PyInit_mdarray(void)
+PyMODINIT_FUNC PyInit_matrix(void)
 {
     return PyModule_Create(&module);
 }

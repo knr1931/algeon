@@ -31,7 +31,7 @@ if not cy.version().version_compare('>=3.0.2')
 endif
 
 #Python Module
-py = import('python').find_installation('python3')
+py = import('python').find_installation(pure: false)
 py_dep = py.dependency()
 
 if not cc.has_header('Python.h', dependencies: py_dep)
