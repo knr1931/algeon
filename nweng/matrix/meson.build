@@ -17,6 +17,7 @@ python_sources = [
   '__init__.py',
   'matrixobject.py',
   '_matypes.py',
+  '_typing.py',
 ]
 
 py.install_sources(

@@ -5,3 +5,4 @@ numpy
 build
 pytest
 spin
+mypy
