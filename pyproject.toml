@@ -17,17 +17,19 @@ authors = [
   {name = 'K Nitesh Reddy', email = 'knreddy1931@gmail.com'},
 ]
 
+[tool.meson-python]
+meson = 'vendored-meson/meson/meson.py'
+
 [tool.spin]
 package = 'nweng'
 
 [tool.spin.commands]
 "Build" = [
-  "spin.cmds.meson.build",
-  "spin.cmds.meson.test",
+  ".spin/cmds.py:build",
+  ".spin/cmds.py:test",
+  ".spin/cmds.py:lint",
 ]
 "Environments" = [
-  "spin.cmds.meson.run", 
-  "spin.cmds.meson.ipython",
-  "spin.cmds.meson.python",
-  "spin.cmds.meson.gdb"
+  "spin.cmds.meson.run", ".spin/cmds.py:ipython",
+  ".spin/cmds.py:python", "spin.cmds.meson.gdb"
 ]
