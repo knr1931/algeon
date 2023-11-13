@@ -21,5 +21,5 @@ python_sources = [
 
 py.install_sources(
   python_sources,
-  subdir: 'nwengine/matrix'
+  subdir: 'nweng/matrix'
 )

@@ -1,4 +1,4 @@
-# nwengine
+# nweng
 
 Library that performs linear Algebra Operations
 

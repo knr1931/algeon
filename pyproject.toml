@@ -6,12 +6,28 @@ requires = [
 ]
 
 [project]
-name = 'nwengine'
+name = 'nweng'
 version = '0.0.1'
-description = 'Linear Algebra Library!'
+description = 'Core BackEnd App for Numeric Wizard Application'
+# TODO: add `license-files`
 readme = 'README.md'
 requires-python = '>=3.11'
 license = {file = 'LICENSE.txt'}
 authors = [
   {name = 'K Nitesh Reddy', email = 'knreddy1931@gmail.com'},
+]
+
+[tool.spin]
+package = 'nweng'
+
+[tool.spin.commands]
+"Build" = [
+  "spin.cmds.meson.build",
+  "spin.cmds.meson.test",
+]
+"Environments" = [
+  "spin.cmds.meson.run", 
+  "spin.cmds.meson.ipython",
+  "spin.cmds.meson.python",
+  "spin.cmds.meson.gdb"
 ]

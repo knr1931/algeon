@@ -11,7 +11,7 @@
 static PyObject *
 foo(PyObject *self)
 {
-    return PyUnicode_FromString("Hello World! from NWENGINE Multi Dim Array Module");
+    return PyUnicode_FromString("Hello World! from nweng Multi Dim Array Module");
 }
 
 static PyMethodDef methods[] = {

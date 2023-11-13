@@ -3,4 +3,5 @@ Cython>=3.0
 ninja
 numpy
 build
+pytest
 spin

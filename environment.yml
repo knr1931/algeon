@@ -1,9 +1,9 @@
 # To use:
 #
 #   $ conda env create -f environment.yml
-#   $ conda activate nwengine-dev
+#   $ conda activate nweng-dev
 #
-name: nwengine-dev
+name: nweng-dev
 channels:
   - conda-forge
 dependencies:
@@ -15,6 +15,7 @@ dependencies:
   - pip
   - numpy
   - build
+  - spin
   # # For testing
   # - pytest
   # - pytest-cov
