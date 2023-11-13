@@ -8,5 +8,7 @@ py.install_sources(
   subdir: 'nweng'
 )
 
+nweng_dir = py.get_install_dir() / 'nweng'
+
 subdir('matrix')
 

@@ -23,3 +23,5 @@ py.install_sources(
   python_sources,
   subdir: 'nweng/matrix'
 )
+
+install_subdir('tests', install_dir: nweng_dir / 'matrix')
