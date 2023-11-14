@@ -8,6 +8,8 @@
 #define PY_SSIZE_T_CLEAN
 #include <Python.h>
 
+#include <numpy/arrayobject.h>
+
 static PyObject *
 foo(PyObject *self)
 {

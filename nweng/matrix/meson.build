@@ -9,7 +9,7 @@ mdarray_include_directories = [
 py.extension_module(
     'matrix',
     mdarray_sources,
-    include_directories: mdarray_include_directories,
+    include_directories: [mdarray_include_directories,incdir_numpy],
     install: true,
 )
 

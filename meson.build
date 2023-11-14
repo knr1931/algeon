@@ -38,6 +38,10 @@ if not cc.has_header('Python.h', dependencies: py_dep)
   error('Cannot compile `Python.h`. Perhaps you need to install python-dev|python-devel')
 endif
 
+incdir_numpy = run_command(py,
+  ['-c', 'import os; os.chdir(".."); import numpy; print(numpy.get_include())'],
+  check : true
+).stdout().strip()
 
 # Add default compile flags for any compiler that supports them.
 
