@@ -6,7 +6,7 @@ requires = [
 ]
 
 [project]
-name = 'nweng'
+name = 'numericwiz'
 version = '0.0.1'
 description = 'Core BackEnd App for Numeric Wizard Application'
 # TODO: add `license-files`
@@ -18,7 +18,7 @@ authors = [
 ]
 
 [tool.spin]
-package = 'nweng'
+package = 'numericwiz'
 
 [tool.spin.commands]
 "Build" = [

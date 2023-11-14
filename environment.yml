@@ -1,9 +1,9 @@
 # To use:
 #
 #   $ conda env create -f environment.yml
-#   $ conda activate nweng-dev
+#   $ conda activate numericwiz-dev
 #
-name: nweng-dev
+name: numericwiz-dev
 channels:
   - conda-forge
 dependencies:

@@ -1,5 +1,5 @@
 project(
-    'nweng',
+    'numericwiz',
     'c', 'cpp', 'cython',
     version: '1.0',
     default_options: [
@@ -18,16 +18,16 @@ cy = meson.get_compiler('cython')
 # Check compiler is recent enough
 if cc.get_id() == 'gcc'
   if not cc.version().version_compare('>=13.2')
-    error('nweng requires GCC >= 13.2')
+    error('numericwiz requires GCC >= 13.2')
   endif
 elif cc.get_id() == 'msvc'
   if not cc.version().version_compare('>=19.20')
-    error('nweng requires at least vc142 (default with Visual Studio 2019) ' + \
+    error('numericwiz requires at least vc142 (default with Visual Studio 2019) ' + \
           'when building with MSVC')
   endif
 endif
 if not cy.version().version_compare('>=3.0.2')
-  error('nweng requires Cython >=3.0.2')
+  error('numericwiz requires Cython >=3.0.2')
 endif
 
 #Python Module
@@ -45,4 +45,4 @@ incdir_numpy = run_command(py,
 
 # Add default compile flags for any compiler that supports them.
 
-subdir('nweng')
+subdir('numericwiz')

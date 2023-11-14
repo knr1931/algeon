@@ -1,4 +1,4 @@
-from nweng.matrix import Matrix
+from numericwiz.matrix import Matrix
 import pytest
 
 class TestClassMatrixCreation:

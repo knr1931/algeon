@@ -22,7 +22,7 @@ python_sources = [
 
 py.install_sources(
   python_sources,
-  subdir: 'nweng/matrix'
+  subdir: 'numericwiz/matrix'
 )
 
-install_subdir('tests', install_dir: nweng_dir / 'matrix')
+install_subdir('tests', install_dir: numericwiz_dir / 'matrix')

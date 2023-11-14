@@ -14,7 +14,7 @@ import click
 from spin import util
 from spin.cmds import meson
 
-def _get_nweng_tools(filename):
+def _get_numericwiz_tools(filename):
     filepath = pathlib.Path('tools', filename)
     spec = importlib.util.spec_from_file_location(filename.stem, filepath)
     module = importlib.util.module_from_spec(spec)
@@ -118,7 +118,7 @@ def test(ctx, pytest_args, markexpr, n_jobs, tests, verbose):
     For more, see `pytest --help`.
     """  # noqa: E501
     if (not pytest_args) and (not tests):
-        pytest_args = ('nweng',)
+        pytest_args = ('numericwiz',)
 
     if '-m' not in pytest_args:
         if markexpr != "full":
@@ -173,7 +173,7 @@ def lint(ctx, branch, uncommitted):
     $ spin lint --uncommitted
     """
     try:
-        linter = _get_nweng_tools(pathlib.Path('linter.py'))
+        linter = _get_numericwiz_tools(pathlib.Path('linter.py'))
     except ModuleNotFoundError as e:
         raise click.ClickException(
             f"{e.msg}. Install using linter_requirements.txt"

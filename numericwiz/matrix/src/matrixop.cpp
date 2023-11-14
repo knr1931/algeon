@@ -15,5 +15,5 @@ matrixop_trace(PyObject *self, PyObject *args)
     int arg_parse_success;
 
     arg_parse_success
-    return PyUnicode_FromString("Hello World! from nweng Multi Dim Array Module");
+    return PyUnicode_FromString("Hello World! from numericwiz Multi Dim Array Module");
 }

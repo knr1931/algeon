@@ -1,4 +1,4 @@
-# nweng
+# numericwiz
 
 Library that performs linear Algebra Operations
 

@@ -5,10 +5,10 @@ python_sources = [
 
 py.install_sources(
   python_sources,
-  subdir: 'nweng'
+  subdir: 'numericwiz'
 )
 
-nweng_dir = py.get_install_dir() / 'nweng'
+numericwiz_dir = py.get_install_dir() / 'numericwiz'
 
 subdir('matrix')
 
